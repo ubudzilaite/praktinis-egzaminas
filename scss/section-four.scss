@@ -1,0 +1,81 @@
+.section-four{
+    background: $text-color;
+    width: 100%;
+  
+    h1{
+      text-align: center;
+      padding-top: 98px;
+      padding-bottom: 21px;
+    }
+    .line-three{
+      margin: 0 auto;
+      width: 64px;
+      height: 2px;
+      background: $main-color-2;
+    }
+  
+    p{
+      text-align: center;
+      margin-top: 26px;
+      color: $text-color-3;
+      font-size: 14px;
+    }
+  
+    .container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin: 65px 200px 122px 200px;
+  
+  
+      .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 286px;
+  
+  
+        .circle{
+          width: 50px;
+          height: 50px;
+          border: 1px solid #E27866;
+          border-radius: 50%;
+          margin-bottom: 35px;
+  
+          svg{
+            width: 17px;
+            height: 22px;
+            fill: $main-color-2;
+            margin-left: 15px;
+            margin-top: 12px;
+  
+  
+          }
+          .flower{
+            width: 20px;
+            height: 16px;
+            margin-top: 15px;
+            margin-left: 14px;
+          }
+  
+          .visa{
+            width: 23px;
+            height: 18px;
+            margin-top: 15px;
+            margin-left: 13px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 700px){
+  .container{
+    .box{
+    margin-top: 20px;
+    }
+  }
+  }

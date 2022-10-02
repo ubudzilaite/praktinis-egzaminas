@@ -1,0 +1,184 @@
+
+.section-two{
+    background: linear-gradient(270deg, rgba(102, 150, 226, 0.42), rgba(226, 120, 102, 0.42)), url(../../assets/mountains.png);
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    #tabs{
+      display: flex;
+      flex-direction: column;
+      padding: 127px 52px 127px 151px;
+  }
+  
+    button{
+      width: 100px;
+      height: 100px;
+      border: none;
+      background: #A37169;
+      box-shadow: 0px 3px 6px #00000029;
+      margin-top: 20px;
+      transition: 0.4s;
+      color: rgba(255, 255, 255, 0.5);
+  
+  
+      span{
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+        transition: 0.2s;
+  
+      &:hover{
+        color: $text-color;
+      }
+    }
+  
+    &:hover{
+      background: $main-color-2;
+      cursor: pointer;
+    }
+  }
+  
+  .active{
+      background: $main-color-2;
+      color: $text-color;
+  }
+  
+  .tab{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+  }
+  .paragraph{
+    padding: 150px 0;
+  
+    h1{
+      width: 509px;
+      height: 124px;
+      color: $text-color;
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 33px;
+      text-align: left;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  
+    p{
+      width: 517px;
+      color: $text-color;
+      font-size: 14px;
+    }
+  }
+  
+  .photos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 114px;
+    padding-left: 79px;
+  
+    .small-photos{
+      display: flex;
+      flex-direction: row;
+  
+    .overlay-container{
+      position: relative;
+  
+    .overlay {
+    position: absolute;
+    top: 5px;
+    bottom: 15px;
+    left: 8px;
+    right: 0;
+    width: 152px;
+    height: auto;
+    opacity: 0;
+    transition: 0.3s;
+    background-color: $main-color-2;
+    text-align: center;
+    color: $text-color;
+    padding: 60px 20px;
+  
+  
+  &:hover{
+    opacity: 0.8;
+  }
+  }
+    .img-smaller{
+      width: 168px;
+      height: 168px;
+  
+      &:nth-of-type(1){
+        margin-right: 25px;
+      }
+      }
+    }
+  }
+  
+  .overlay-container-two{
+    position: relative;
+  
+  .overlay-two {
+  position: absolute;
+  top: 5px;
+  bottom: 15px;
+  left: 8px;
+  right: 1px;
+  width: 346px;
+  height: auto;
+  opacity: 0;
+  transition: 0.3s;
+  background-color: $main-color-2;
+  text-align: center;
+  color: $text-color;
+  padding: 60px 20px;
+  
+  
+  &:hover{
+  opacity: 0.8;
+  }
+  }
+    .img-bigger{
+      width: 362px;
+      height: 177px;
+    }
+  }
+  }
+  }
+  
+  
+  @media(max-width: 1260px){
+      .section-two{
+        justify-content: center;
+  
+        #tabs{
+          flex-direction: row;
+          padding:0;
+          padding-top: 20px;
+          gap: 10px;
+        }
+    }
+  }
+  
+  @media (max-width: 960px){
+    .tab{
+      justify-content: center;
+      align-items: center;
+  
+      .paragraph{
+        padding: 80px 0;
+      }
+  
+      .photos{
+        padding: 0;
+        padding-bottom: 30px;
+      }
+  
+  
+  }
+  }
